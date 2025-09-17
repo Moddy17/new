@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARNING - Online Learning Platform</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="assets/js/carousel.js" defer></script>
+    <script src="assets/js/testimonial-carousel.js" defer></script>
+    <style>
+        .carousel-slide {
+            display: none;
+        }
+        .carousel-slide.active {
+            display: block;
+        }
+        .testimonial-carousel .flex {
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+<!-- HEADER -->
+<header class="fixed z-50 w-full bg-white shadow-md">
+<nav class="container flex items-center justify-between px-6 py-4 mx-auto">
+<!-- Logo -->
+<a href="#" class="flex items-center">
+<img src="assets/images/1.3.1.png" alt="Logo" class="w-20 h-15">
+</a>
+
+
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-button" class="text-gray-600 transition duration-300 ease-in-out md:hidden focus:outline-none">
+<i class="text-2xl fas fa-bars"></i>
+</button>
+
+
+<!-- Desktop Menu -->
+<div class="hidden space-x-8 md:flex">
+<a href="#" class="text-gray-600 hover:text-primary-500">HOME</a>
+<a href="#" class="text-gray-600 hover:text-primary-500">VISI-MISI</a>
+<a href="#" class="text-gray-600 hover:text-primary-500">COURSES</a>
+<a href="#" class="text-gray-600 hover:text-primary-500">CONTACT</a>
+</div>
+
+<!-- Floating Action Button -->
+<button id="mobile-action-button" class="fixed z-50 px-5 py-3 text-white transition transform rounded-full shadow-lg bottom-6 right-6 bg-primary-500 hover:bg-primary-600 md:hidden active:scale-95">
+<i class="fas fa-phone-alt"></i>
+</button>
+
+<!-- Join Button -->
+<a href="#" class="hidden px-6 py-2 text-white rounded-full bg-primary-500 hover:bg-primary-600 md:block">
+Join Now <i class="ml-2 fas fa-arrow-right"></i>
+</a>
+</nav>
+</header>
+
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="absolute left-0 w-full py-4 transition-all duration-300 transform -translate-y-full bg-white shadow-lg opacity-0 z-[100] md:hidden top-16">
+<div class="container flex flex-col items-center px-6 mx-auto space-y-4">
+<a href="#" class="block text-gray-600 hover:text-primary-500">HOME</a>
+<a href="#" class="block text-gray-600 hover:text-primary-500">VISI-MISI</a>
+<a href="#" class="block text-gray-600 hover:text-primary-500">COURSES</a>
+<a href="#" class="block text-gray-600 hover:text-primary-500">CONTACT</a>
+<a href="#" class="w-full px-6 py-2 text-center text-white rounded-full bg-primary-500 hover:bg-primary-600">Join Now</a>
+</div>
+</div>
+    
+    <section class="relative pt-24 bg-gradient-to-r from-primary-500 to-blue-600">
+        <div class="relative overflow-hidden">
+            <div class="relative carousel">
+                <div class="carousel-slide">
+                    <div class="container px-4 py-16 mx-auto">
+                        <div class="grid items-center gap-8 md:grid-cols-2">
+                            <div class="space-y-6 text-white">
+                                <h1 class="text-4xl font-bold leading-tight md:text-5xl">
+                                    COURSES ONLINE TERBAIK
+                                </h1>
+                                <p class="text-lg opacity-90">
+                                    Waktunya belajar? Get you to many more, langsung dari rumah.
+                                </p>
+                                <div class="space-x-4">
+                                    <a href="#" class="inline-block px-8 py-3 transition-colors bg-white rounded-md text-primary-500 hover:bg-gray-100">
+                                        Read More
+                                    </a>
+                                    <a href="#" class="inline-block px-8 py-3 text-white transition-colors border border-white rounded-md hover:bg-white hover:text-primary-500">
+                                        Join Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hidden md:block">
+                                <img src="assets/images/1.7.jpg" alt="Online Learning" class="rounded-lg shadow-xl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="container px-4 py-16 mx-auto">
+                        <div class="grid items-center gap-8 md:grid-cols-2">
+                            <div class="space-y-6 text-white">
+                                <h1 class="text-4xl font-bold leading-tight md:text-5xl">
+                                    Dapatkan Pendidikan Online Langsung dari Rumah
+                                </h1>
+                                <p class="text-lg opacity-90">
+                                    Belajar dari instruktur terbaik kapanpun dan dimanapun
+                                </p>
+                                <div class="space-x-4">
+                                    <a href="#" class="inline-block px-8 py-3 transition-colors bg-white rounded-md text-primary-500 hover:bg-gray-100">
+                                        Read More
+                                    </a>
+                                    <a href="#" class="inline-block px-8 py-3 text-white transition-colors border border-white rounded-md hover:bg-white hover:text-primary-500">
+                                        Join Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hidden md:block">
+                                <img src="assets/images/1.8.jpg" alt="Online Education" class="rounded-lg shadow-xl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="container px-4 py-16 mx-auto">
+                        <div class="grid items-center gap-8 md:grid-cols-2">
+                            <div class="space-y-6 text-white">
+                                <h1 class="text-4xl font-bold leading-tight md:text-5xl">
+                                    Mulai Karir Anda Dengan Kursus Terbaik
+                                </h1>
+                                <p class="text-lg opacity-90">
+                                    Tingkatkan skill dan pengetahuan Anda bersama para ahli
+                                </p>
+                                <div class="space-x-4">
+                                    <a href="#" class="inline-block px-8 py-3 transition-colors bg-white rounded-md text-primary-500 hover:bg-gray-100">
+                                        Read More
+                                    </a>
+                                    <a href="#" class="inline-block px-8 py-3 text-white transition-colors border border-white rounded-md hover:bg-white hover:text-primary-500">
+                                        Join Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hidden md:block">
+                                <img src="assets/images/2.jpg" alt="Career Growth" class="rounded-lg shadow-xl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute left-0 right-0 flex justify-center space-x-2 bottom-4">
+                <button class="w-3 h-3 transition-opacity bg-white rounded-full opacity-50 carousel-dot hover:opacity-75"></button>
+                <button class="w-3 h-3 transition-opacity bg-white rounded-full opacity-50 carousel-dot hover:opacity-75"></button>
+                <button class="w-3 h-3 transition-opacity bg-white rounded-full opacity-50 carousel-dot hover:opacity-75"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container px-4 mx-auto">
+            <div class="grid h-full gap-8 lg:grid-cols-4">
+                <div class="flex flex-col h-full text-center">
+                    <div class="flex flex-col flex-1 p-6 bg-white rounded-lg shadow-md">
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-primary-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-2 text-lg font-semibold">Book Library</h3>
+                        <p class="flex-1 text-gray-600">Pengetahuan diulur diulang dengan soal</p>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full text-center">
+                    <div class="flex flex-col flex-1 p-6 bg-white rounded-lg shadow-md">
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-primary-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-2 text-lg font-semibold">Class Online</h3>
+                        <p class="flex-1 text-gray-600">Belajar kapan saja dan dimana saja</p>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full text-center">
+                    <div class="flex flex-col flex-1 p-6 bg-white rounded-lg shadow-md">
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-primary-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-2 text-lg font-semibold">Home Projects</h3>
+                        <p class="flex-1 text-gray-600">Mulai projek besar dirumah</p>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full text-center">
+                    <div class="flex flex-col flex-1 p-6 bg-white rounded-lg shadow-md">
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-primary-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-2 text-lg font-semibold">Instruktur yang Terampil</h3>
+                        <p class="flex-1 text-gray-600">Belajar dengan ahli yang berpengalaman</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container px-4 mx-auto">
+            <div class="mb-12 text-center">
+                <h5 class="mb-2 text-5xl font-bold text-primary-500">CATEGORIES</h5>
+                <h2 class="heading-primary">Courses Categories</h2>
+            </div>
+            <div class="grid gap-8 md:grid-cols-4">
+                <div class="relative overflow-hidden transition-transform rounded-lg shadow-lg group hover:-translate-y-1">
+                    <img src="assets/images/cat-1.jpg" alt="Web Design" class="object-cover w-full h-48">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-semibold text-white">Web Design</h3>
+                            <p class="text-gray-200">45 Courses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden transition-transform rounded-lg shadow-lg group hover:-translate-y-1">
+                    <img src="assets/images/cat-2.jpg" alt="Graphic Design" class="object-cover w-full h-48">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-semibold text-white">Graphic Design</h3>
+                            <p class="text-gray-200">32 Courses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden transition-transform rounded-lg shadow-lg group hover:-translate-y-1">
+                    <img src="assets/images/cat-3.jpg" alt="Video Editing" class="object-cover w-full h-48">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-semibold text-white">Video Editing</h3>
+                            <p class="text-gray-200">28 Courses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden transition-transform rounded-lg shadow-lg group hover:-translate-y-1">
+                    <img src="assets/images/cat-4.jpg" alt="Online Marketing" class="object-cover w-full h-48">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-semibold text-white">Online Marketing</h3>
+                            <p class="text-gray-200">38 Courses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container px-4 mx-auto">
+            <div class="mb-12 text-center">
+                <h5 class="mb-2 text-5xl font-bold text-primary-500">COURSES</h5>
+                <h2 class="heading-primary">Popular Courses</h2>
+            </div>
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="overflow-hidden transition-transform bg-white rounded-lg shadow-lg hover:-translate-y-1">
+                    <div class="relative">
+                        <img src="assets/images/course-2.jpg" alt="Web Development" class="object-cover w-full h-48">
+                        <div class="absolute px-3 py-1 text-sm text-white rounded-full top-4 right-4 bg-primary-500">
+                            Best Seller
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="mb-2 text-xl font-semibold">Web Design & Development Course for Beginners</h3>
+                        <div class="flex items-center mb-4 text-sm text-gray-500">
+                            <span><i class="mr-2 fas fa-book-open"></i>24 Lessons</span>
+                            <span class="mx-2">•</span>
+                            <span><i class="mr-1 text-yellow-400 fas fa-star"></i>4.5</span>
+                            <span class="mx-2">•</span>
+                            <span><i class="mr-2 fas fa-users"></i>2.5k Students</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-primary-500">$200.00</span>
+                            <button class="px-4 py-2 text-white transition-colors rounded-md bg-primary-500 hover:bg-primary-600">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden transition-transform bg-white rounded-lg shadow-lg hover:-translate-y-1">
+                    <div class="relative">
+                        <img src="assets/images/2.0.jpg" alt="Business Engineer" class="object-cover w-full h-48">
+                        <div class="absolute px-3 py-1 text-sm text-white rounded-full top-4 right-4 bg-primary-500">
+                            Popular
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="mb-2 text-xl font-semibold">Bisnis Engineer</h3>
+                        <div class="flex items-center mb-4 text-sm text-gray-500">
+                            <span><i class="mr-2 fas fa-book-open"></i>18 Lessons</span>
+                            <span class="mx-2">•</span>
+                            <span><i class="mr-1 text-yellow-400 fas fa-star"></i>4.8</span>
+                            <span class="mx-2">•</span>
+                            <span><i class="mr-2 fas fa-users"></i>1.8k Students</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-primary-500">$200.00</span>
+                            <button class="px-4 py-2 text-white transition-colors rounded-md bg-primary-500 hover:bg-primary-600">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden transition-transform bg-white rounded-lg shadow-lg hover:-translate-y-1">
+                    <div class="relative">
+                        <img src="assets/images/2.1.jpg" alt="Artificial Intelligence" class="object-cover w-full h-48">
+                        <div class="absolute px-3 py-1 text-sm text-white rounded-full top-4 right-4 bg-primary-500">
+                            New
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="mb-2 text-xl font-semibold">Artificial Intelligence</h3>
+                        <div class="flex items-center mb-4 text-sm text-gray-500">
+                            <span><i class="mr-2 fas fa-book-open"></i>32 Lessons</span>
+                            <span class="mx-2">•</span>
+                            <span><i class="mr-1 text-yellow-400 fas fa-star"></i>4.7</span>
+                            <span class="mx-2">•</span>
+                            <span><i class="mr-2 fas fa-users"></i>1.2k Students</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-primary-500">$250.00</span>
+                            <button class="px-4 py-2 text-white transition-colors rounded-md bg-primary-500 hover:bg-primary-600">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container px-4 mx-auto">
+            <div class="mb-12 text-center">
+                <h5 class="mb-2 text-5xl font-bold text-primary-500">TEAM</h5>
+                <h2 class="heading-primary">Expert Instructors</h2>
+            </div>
+            <div class="grid gap-8 md:grid-cols-4">
+                <div class="p-6 text-center transition-transform bg-white rounded-lg shadow-lg hover:-translate-y-1">
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                        <img src="assets/images/team-1.jpg" alt="Indra" class="object-cover w-full h-full border-4 rounded-full border-primary-500">
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">Indra</h3>
+                    <p class="mb-4 text-gray-500">Web Developer</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-6 text-center transition-transform bg-white rounded-lg shadow-lg hover:-translate-y-1">
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                        <img src="assets/images/team-3.jpg" alt="Wiek" class="object-cover w-full h-full border-4 rounded-full border-primary-500">
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">Wiek</h3>
+                    <p class="mb-4 text-gray-500">UI/UX Designer</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-6 text-center transition-transform bg-white rounded-lg shadow-lg hover:-translate-y-1">
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                        <img src="assets/images/2.2.jpg" alt="Maddy" class="object-cover w-full h-full border-4 rounded-full border-primary-500">
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">Maddy</h3>
+                    <p class="mb-4 text-gray-500">Digital Marketer</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-6 text-center transition-transform bg-white rounded-lg shadow-lg hover:-translate-y-1">
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                        <img src="assets/images/team-4.jpg" alt="Ririn" class="object-cover w-full h-full border-4 rounded-full border-primary-500">
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">Ririn</h3>
+                    <p class="mb-4 text-gray-500">Business Expert</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-center w-8 h-8 text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container px-6 mx-auto">
+            <div class="mb-12 text-center">
+                <h2 class="mb-2 text-xl font-semibold text-primary-500">TESTIMONIAL</h2>
+                <h3 class="text-3xl font-bold">Our Students Say!</h3>
+            </div>
+            <div class="max-w-5xl mx-auto testimonial-carousel">
+                <div class="relative overflow-hidden">
+                    <div class="flex transition-transform duration-500" id="testimonialSlider">
+                        <div class="grid flex-shrink-0 w-full grid-cols-1 gap-6 px-4 md:grid-cols-4">
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/team-2.jpg" alt="NADIA" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">NADIA</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Dapat banyak ilmu yang bisa saya dapat dari learning ini. semuanya nyata.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/team-3.jpg" alt="SANDY" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">SANDY</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Senang bisa bergabung di kelas ini. Selama belajar, saya merasa didukung dan nyaman bertanya.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/cat-2.jpg" alt="HASAN" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">HASAN</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Instrukturnya sangat sabar dan ahli di bidangnya. Penjelasanya bikin saya lebih semangat belajar.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/team-1.jpg" alt="INDRA" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">INDRA</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Platform ini sangat membantu saya dalam belajar web development.</p>
+                            </div>
+                        </div>
+                        <div class="grid flex-shrink-0 w-full grid-cols-1 gap-6 px-4 md:grid-cols-4">
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/team-3.jpg" alt="WIEK" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">WIEK</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Materi yang diberikan sangat lengkap dan mudah dipahami.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/2.2.jpg" alt="MADDY" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">MADDY</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Instruktur sangat ramah dan selalu membantu jika ada kesulitan.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/team-4.jpg" alt="RIRIN" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">RIRIN</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Saya sangat puas dengan hasil belajar di platform ini.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/1.8.jpg" alt="ELSA" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">ELSA</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Belajar jadi lebih menyenangkan dan interaktif.</p>
+                            </div>
+                        </div>
+                        <div class="grid flex-shrink-0 w-full grid-cols-1 gap-6 px-4 md:grid-cols-4">
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/1.9.jpg" alt="RUHDAN" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">RUHDAN</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Banyak fitur yang memudahkan proses belajar saya.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/3.jpg" alt="SITI" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">SITI</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Kursusnya sangat bermanfaat untuk karir saya.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/2.1.jpg" alt="HASAN" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">HASAN</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Instruktur sangat sabar dan ahli di bidangnya.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/1.PNG" alt="HUSAN" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">HUSAN</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Penjelasannya mudah dipahami dan sangat membantu.</p>
+                            </div>
+                        </div>
+                        <div class="grid flex-shrink-0 w-full grid-cols-1 gap-6 px-4 md:grid-cols-4">
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/1.7.jpg" alt="BUDI" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">BUDI</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Saya merekomendasikan platform ini ke teman-teman saya.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/cat-1.jpg" alt="RAMA" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">RAMA</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Kursusnya sangat menarik dan mudah diikuti.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/cat-2.jpg" alt="DEWI" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">DEWI</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Instruktur sangat profesional dan berpengalaman.</p>
+                            </div>
+                            <div class="p-8 text-center rounded-lg bg-gray-50">
+                                <img src="assets/images/cat-3.jpg" alt="YOGA" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
+                                <h4 class="mb-2 text-xl font-semibold">YOGA</h4>
+                                <p class="mb-2 text-gray-600">MAHASISWA</p>
+                                <p class="text-gray-700">Saya mendapatkan banyak ilmu baru di sini.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="w-3 h-3 rounded-full bg-primary-500" data-slide="0" onclick="goToSlide(0)"></button>
+                    <button class="w-3 h-3 bg-gray-300 rounded-full hover:bg-primary-500" data-slide="1" onclick="goToSlide(1)"></button>
+                    <button class="w-3 h-3 bg-gray-300 rounded-full hover:bg-primary-500" data-slide="2" onclick="goToSlide(2)"></button>
+                    <button class="w-3 h-3 bg-gray-300 rounded-full hover:bg-primary-500" data-slide="3" onclick="goToSlide(3)"></button>
+                </div>
+            </div>
+        </section>
+        <div class="flex justify-center my-8 space-x-4">
+            <button class="px-6 py-2 text-white rounded-full bg-primary-500 hover:bg-primary-600" onclick="moveSlide(-1)">
+                <i class="mr-2 fas fa-chevron-left"></i> Prev
+            </button>
+            <button class="px-6 py-2 text-white rounded-full bg-primary-500 hover:bg-primary-600" onclick="moveSlide(1)">
+                Next <i class="ml-2 fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <footer class="py-12 text-white bg-gray-900">
+            <div class="container px-4 mx-auto">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+                    <div>
+                        <h4 class="mb-4 text-lg font-semibold">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 transition-colors hover:text-white">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 transition-colors hover:text-white">Contact Us</a></li>
+                            <li><a href="#" class="text-gray-400 transition-colors hover:text-white">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-400 transition-colors hover:text-white">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="mb-4 text-lg font-semibold">Contact</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="mt-1 mr-3 fas fa-map-marker-alt text-primary-500"></i>
+                                <span class="text-gray-400">JL. JAKARTA, IND</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="mr-3 fas fa-phone text-primary-500"></i>
+                                <span class="text-gray-400">+62 812 3456 7890</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="mr-3 fas fa-envelope text-primary-500"></i>
+                                <span class="text-gray-400">info@learning.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="mb-4 text-lg font-semibold">Gallery</h4>
+                        <div class="grid grid-cols-3 gap-2">
+                            <a href="#" class="block">
+                                <img src="assets/images/2.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                            </a>
+                            <a href="#" class="block">
+                                <img src="assets/images/3.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                            </a>
+                            <a href="#" class="block">
+                                <img src="assets/images/2.1.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                            </a>
+                            <a href="#" class="block">
+                                <img src="assets/images/1.PNG" alt="Gallery" class="object-cover w-full h-20 rounded">
+                            </a>
+                            <a href="#" class="block">
+                                <img src="assets/images/1.9.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                            </a>
+                            <a href="#" class="block">
+                                <img src="assets/images/1.8.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="mb-4 text-lg font-semibold">Newsletter</h4>
+                        <p class="mb-4 text-gray-400">Subscribe to our newsletter to receive updates on new courses and special offers.</p>
+                        <form class="space-y-3">
+                            <div class="relative">
+                                <input type="email" placeholder="Your Email" class="w-full px-4 py-2 text-white bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500">
+                            </div>
+                            <button type="submit" class="w-full btn-primary">
+                                Subscribe Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="pt-8 mt-12 border-t border-gray-800">
+                    <div class="flex flex-col items-center justify-between md:flex-row">
+                        <div class="mb-4 text-gray-400 md:mb-0">
+                            © 2025 Learning. All Rights Reserved. Designed by <a href="#" class="text-primary-500 hover:text-primary-400">Dhony Nurhandoko</a>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <script>
+// Toggle Mobile Menu
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+
+mobileMenuButton.addEventListener('click', () => {
+mobileMenu.classList.toggle('-translate-y-full');
+mobileMenu.classList.toggle('opacity-0');
+mobileMenu.classList.toggle('opacity-100');
+});
+
+
+// Floating button action
+document.getElementById('mobile-action-button').addEventListener('click', function() {
+window.location.href = "https://wa.me/6281234567890"; // WhatsApp link
+});
+    </script>
+
+</body>
+</html>
