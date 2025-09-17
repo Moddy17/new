@@ -1,7 +1,17 @@
 @import "tailwindcss";
 
+/* Preline UI */
+@source "../node_modules/preline/dist/*.js";
+@import "../node_modules/preline/variants.css";
+
+@import "../node_modules/@fontsource/nunito/latin.css";
+
+/* Plugins */
+@plugin "@tailwindcss/forms";
+
 @theme {
-    
+    --font-sans: 'Nunito', sans-serif;
+
     /* --color-primary-50: #f0f9ff;
     --color-primary-100: #e0f2fe;
     --color-primary-200: #bae6fd;
