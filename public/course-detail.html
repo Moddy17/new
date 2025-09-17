@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Detail - LEARNING</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="assets/js/carousel.js" defer></script>
+    <script src="assets/js/testimonial-carousel.js" defer></script>
+</head>
+<body class="bg-white">
+    <!--========== Navigation ==========-->
+   <header class="fixed z-50 w-full bg-white shadow-md">
+        <nav class="container flex items-center justify-between px-6 py-4 mx-auto">
+            <div class="flex items-center">
+                <a href="/" class="text-2xl font-bold text-cyan-500">
+                    <i class="mr-2 fas fa-graduation-cap"></i>LEARNING
+                </a>
+            </div>
+            <div class="items-center hidden space-x-8 md:flex">
+                <a href="index.html" class="text-gray-600 hover:text-cyan-500">HOME</a>
+                <a href="visi-misi.html" class="text-gray-600 hover:text-cyan-500">VISI-MISI</a>
+                <a href="courses.html" class="text-gray-600 hover:text-cyan-500">COURSES</a>
+                <div class="relative" id="pages-dropdown">
+                    <button type="button" class="flex items-center text-gray-600 hover:text-cyan-500 focus:outline-none" onclick="toggleDropdown()">
+                        PAGES <i class="ml-1 text-xs fas fa-chevron-down"></i>
+                    </button>
+                    <div id="dropdown-menu" class="absolute left-0 z-50 invisible w-40 mt-2 transition-opacity bg-white rounded shadow-lg opacity-0">
+                        <a href="our-team.html" class="block px-4 py-2 text-gray-600 hover:bg-cyan-50 hover:text-cyan-500">Our Team</a>
+                        <a href="testimoni.html" class="block px-4 py-2 text-gray-600 hover:bg-cyan-50 hover:text-cyan-500">Testimoni</a>
+                        <a href="404.html" class="block px-4 py-2 text-gray-600 hover:bg-cyan-50 hover:text-cyan-500">404 Error</a>
+                    </div>
+                </div>
+                <script>
+                    function toggleDropdown() {
+                        const menu = document.getElementById('dropdown-menu');
+                        if (menu.classList.contains('opacity-0')) {
+                            menu.classList.remove('opacity-0', 'invisible');
+                            menu.classList.add('opacity-100', 'visible');
+                        } else {
+                            menu.classList.add('opacity-0', 'invisible');
+                            menu.classList.remove('opacity-100', 'visible');
+                        }
+                    }
+                    // Optional: Close dropdown when clicking outside
+                    document.addEventListener('click', function(event) {
+                        const dropdown = document.getElementById('pages-dropdown');
+                        const menu = document.getElementById('dropdown-menu');
+                        if (!dropdown.contains(event.target)) {
+                            menu.classList.add('opacity-0', 'invisible');
+                            menu.classList.remove('opacity-100', 'visible');
+                        }
+                    });
+                </script>
+                <a href="contact.html" class="text-gray-600 hover:text-cyan-500">CONTACT</a>
+            </div>
+            <div class="flex items-center">
+                <a href="/join-now" class="px-6 py-2 text-white rounded-full bg-cyan-500 hover:bg-cyan-600">
+                    Join Now <i class="ml-2 fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Course Detail Section -->
+    <main class="pt-24">
+        <div class="container px-6 py-8 mx-auto">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <!-- Course Content (Left Side) -->
+                <div class="lg:col-span-2">
+                    <img src="assets/images/course-placeholder.jpg" alt="Course Image" class="object-cover w-full mb-6 h-80 rounded-xl">
+                    <h1 class="mb-4 text-3xl font-bold text-gray-800">Course Title</h1>
+                    
+                    <!-- Course Tabs -->
+                    <div class="mb-6 border-b border-gray-200">
+                        <nav class="flex space-x-8" aria-label="Course tabs">
+                            <button class="px-1 py-4 text-sm font-medium border-b-2 border-cyan-500 text-cyan-500">Overview</button>
+                            <button class="px-1 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-gray-700">Curriculum</button>
+                            <button class="px-1 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-gray-700">Instructor</button>
+                            <button class="px-1 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-gray-700">Reviews</button>
+                        </nav>
+                    </div>
+
+                    <!-- Course Description -->
+                    <div class="prose max-w-none">
+                        <h2 class="mb-4 text-2xl font-semibold">Course Description</h2>
+                        <p class="mb-6 text-gray-600">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+
+                        <h3 class="mb-3 text-xl font-semibold">What you'll learn</h3>
+                        <ul class="pl-5 mb-6 text-gray-600 list-disc">
+                            <li>Comprehensive understanding of the subject matter</li>
+                            <li>Practical skills and hands-on experience</li>
+                            <li>Industry-relevant knowledge and best practices</li>
+                            <li>Problem-solving and analytical thinking skills</li>
+                        </ul>
+
+                        <h3 class="mb-3 text-xl font-semibold">Requirements</h3>
+                        <ul class="pl-5 mb-6 text-gray-600 list-disc">
+                            <li>Basic understanding of the field</li>
+                            <li>Computer with internet connection</li>
+                            <li>Dedication to learn and practice</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Course Info Sidebar (Right Side) -->
+                <div class="lg:col-span-1">
+                    <div class="sticky p-6 bg-white shadow-lg rounded-xl top-24">
+                        <div class="mb-4">
+                            <span class="text-3xl font-bold text-gray-800">$99.99</span>
+                            <span class="ml-2 text-lg text-gray-500 line-through">$199.99</span>
+                        </div>
+                        <button class="w-full px-4 py-3 mb-4 text-white rounded-lg bg-cyan-500 hover:bg-cyan-600">
+                            Enroll Now
+                        </button>
+                        <div class="space-y-4">
+                            <div class="flex items-center text-gray-600">
+                                <i class="w-6 fas fa-clock"></i>
+                                <span class="ml-2">Duration: 12 weeks</span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <i class="w-6 fas fa-video"></i>
+                                <span class="ml-2">36 hours of video content</span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <i class="w-6 fas fa-certificate"></i>
+                                <span class="ml-2">Certificate of completion</span>
+                            </div>
+                            <div class="flex items-center text-gray-600">
+                                <i class="w-6 fas fa-infinity"></i>
+                                <span class="ml-2">Lifetime access</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="py-12 text-white bg-gray-900">
+        <div class="container px-4 mx-auto">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="mb-4 text-lg font-semibold">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 transition-colors hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors hover:text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="mb-4 text-lg font-semibold">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="mt-1 mr-3 fas fa-map-marker-alt text-primary-500"></i>
+                            <span class="text-gray-400">JL. C JAKARTA, IND</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="mr-3 fas fa-phone text-primary-500"></i>
+                            <span class="text-gray-400">+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="mr-3 fas fa-envelope text-primary-500"></i>
+                            <span class="text-gray-400">info@learning.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Gallery -->
+                <div>
+                    <h4 class="mb-4 text-lg font-semibold">Gallery</h4>
+                    <div class="grid grid-cols-3 gap-2">
+                        <a href="#" class="block">
+                            <img src="assets/images/gallery-1.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="assets/images/gallery-2.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="assets/images/gallery-3.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="assets/images/gallery-4.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="assets/images/gallery-5.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="assets/images/gallery-6.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="mb-4 text-lg font-semibold">Newsletter</h4>
+                    <p class="mb-4 text-gray-400">Subscribe to our newsletter to receive updates on new courses and special offers.</p>
+                    <form class="space-y-3">
+                        <div class="relative">
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-2 text-white bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500">
+                        </div>
+                        <button type="submit" class="w-full btn-primary">
+                            Subscribe Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="pt-8 mt-12 border-t border-gray-800">
+                <div class="flex flex-col items-center justify-between md:flex-row">
+                    <div class="mb-4 text-gray-400 md:mb-0">
+                        © 2025 Learning. All Rights Reserved. Designed by <a href="#" class="text-primary-500 hover:text-primary-400">Dhony Nurhandoko</a>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dropdown toggle
+        function toggleDropdown() {
+            const menu = document.getElementById('dropdown-menu');
+            if (menu.classList.contains('opacity-0')) {
+                menu.classList.remove('opacity-0', 'invisible');
+            } else {
+                menu.classList.add('opacity-0', 'invisible');
+            }
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('pages-dropdown');
+            const menu = document.getElementById('dropdown-menu');
+            if (!dropdown.contains(event.target)) {
+                menu.classList.add('opacity-0', 'invisible');
+            }
+        });
+    </script>
+</body>
+</html>

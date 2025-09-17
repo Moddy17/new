@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LEARNING Platform</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="assets/js/carousel.js" defer></script>
+    <script src="assets/js/testimonial-carousel.js" defer></script>
+</head>
+<body>
+    <!--========== Navigation ==========-->
+   <header class="fixed z-50 w-full bg-white shadow-md">
+        <nav class="container flex items-center justify-between px-6 py-4 mx-auto">
+            <div class="flex items-center">
+                <!-- <a href="/" class="text-2xl font-bold text-primary-500">
+                    <i class="mr-2 fas fa-book-open"></i>LEARNING
+                </a> -->
+                <a href="/" class="flex items-center">
+                    <img src="assets/images/1.3.1.png" alt="LEARNING Logo" class="w-20 mr-2 h-15">
+                    <!-- <span class="text-2xl font-bold text-primary-500">LEARNING</span> -->
+                </a>
+            </div>
+            <div class="items-center hidden space-x-8 md:flex">
+                <a href="index.html" class="text-gray-600 hover:text-primary-500">HOME</a>
+                <a href="visi-misi.html" class="text-gray-600 hover:text-primary-500">VISI-MISI</a>
+                <a href="courses.html" class="text-gray-600 hover:text-primary-500">COURSES</a>
+                <div class="relative" id="pages-dropdown">
+                    <button type="button" class="flex items-center text-gray-600 hover:text-primary-500 focus:outline-none" onclick="toggleDropdown()">
+                        PAGES <i class="ml-1 text-xs fas fa-chevron-down"></i>
+                    </button>
+                    <div id="dropdown-menu" class="absolute left-0 z-50 invisible w-40 mt-2 transition-opacity bg-white rounded shadow-lg opacity-0">
+                        <a href="our-team.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">Our Team</a>
+                        <a href="testimoni.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">Testimoni</a>
+                        <a href="404.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">404 Error</a>
+                    </div>
+                </div>
+                <script>
+                    function toggleDropdown() {
+                        const menu = document.getElementById('dropdown-menu');
+                        if (menu.classList.contains('opacity-0')) {
+                            menu.classList.remove('opacity-0', 'invisible');
+                            menu.classList.add('opacity-100', 'visible');
+                        } else {
+                            menu.classList.add('opacity-0', 'invisible');
+                            menu.classList.remove('opacity-100', 'visible');
+                        }
+                    }
+                    // Optional: Close dropdown when clicking outside
+                    document.addEventListener('click', function(event) {
+                        const dropdown = document.getElementById('pages-dropdown');
+                        const menu = document.getElementById('dropdown-menu');
+                        if (!dropdown.contains(event.target)) {
+                            menu.classList.add('opacity-0', 'invisible');
+                            menu.classList.remove('opacity-100', 'visible');
+                        }
+                    });
+                </script>
+                <a href="contact.html" class="text-gray-600 hover:text-primary-500">CONTACT</a>
+            </div>
+            <div class="flex items-center">
+                <a href="/join-now" class="px-6 py-2 text-white rounded-full bg-primary-500 hover:bg-primary-600">
+                    Join Now <i class="ml-2 fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 h-[400px]">
+        <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('assets/images/1.6.jpg');"></div>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container relative flex flex-col justify-center h-full px-6 mx-auto text-white">
+            <h1 class="mb-4 text-4xl font-bold md:text-5xl">visi-misi</h1>
+            <div class="flex items-center space-x-2 text-sm">
+                <a href="/" class="hover:text-primary-500">Home</a>
+                <span>/</span>
+                <a href="/pages" class="hover:text-primary-500">Pages</a>
+                <span>/</span>
+                <span class="text-primary-500">About</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container grid grid-cols-1 gap-8 px-6 mx-auto md:grid-cols-2 lg:grid-cols-4">
+            <!-- Feature 1 -->
+            <div class="p-6 text-center bg-white rounded-lg shadow-lg">
+                <div class="mb-4 text-4xl text-primary-500">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3 class="mb-2 text-xl font-semibold">Instruktur yang Terampil</h3>
+                <p class="text-gray-600">Dari Nol Sampai Mahir, Berkat Bimbingan Instruktur Berpengalaman</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="p-6 text-center bg-white rounded-lg shadow-lg">
+                <div class="mb-4 text-4xl text-primary-500">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="mb-2 text-xl font-semibold">Class Online</h3>
+                <p class="text-gray-600">Ilmu baru, bukan cuma haus validasi. belajar di sini dijamin bikin kamu makin pintar,kreatif Dan Juga keren!</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="p-6 text-center bg-white rounded-lg shadow-lg">
+                <div class="mb-4 text-4xl text-primary-500">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3 class="mb-2 text-xl font-semibold">Home Projects</h3>
+                <p class="text-gray-600">Mulai proyek bisnis Anda sendiri tanpa harus meninggalkan rumah</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="p-6 text-center bg-white rounded-lg shadow-lg">
+                <div class="mb-4 text-4xl text-primary-500">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3 class="mb-2 text-xl font-semibold">Book Library</h3>
+                <p class="text-gray-600">Tingkatkan Pengetahuan Anda, Perpustakaan, investasi terbaik untuk masa depan Anda</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="py-20">
+        <div class="container px-6 mx-auto">
+            <div class="grid items-center grid-cols-1 gap-12 md:grid-cols-2">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="assets/images/about.jpg" alt="Welcome to LEARNING" class="w-full h-auto">
+                </div>
+                <div>
+                    <span class="font-semibold text-primary-500">VISI-MISI</span>
+                    <h2 class="mt-2 mb-6 text-3xl font-bold">Welcome to LEARNING</h2>
+                    <p class="mb-6 text-gray-600">
+                        Menjadi platform bimbingan belajar online terdepan yang memberdayakan setiap siswa untuk meraih potensi akademik tertinggi mereka, menciptakan generasi yang cerdas, kreatif, dan berdaya saing global
+                    </p>
+                    <p class="mb-6 text-gray-600">
+                        Pendidikan di Genggaman Anda. Dapatkan akses ke ilmu baru, cukup dari rumah atau di mana pun Anda berada. Jadwal Fleksibel, Hasil Maksimal. Atur waktu belajar Anda sendiri sesuai dengan kesibukan anda.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check text-primary-500"></i>
+                            <span>Instruktur yang Terampil</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check text-primary-500"></i>
+                            <span>Class Online</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check text-primary-500"></i>
+                            <span>national Certificate</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check text-primary-500"></i>
+                            <span>Skilled Instructors</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check text-primary-500"></i>
+                            <span>Skilled Communication</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check text-primary-500"></i>
+                            <span>International Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block px-8 py-3 mt-8 text-white rounded-full bg-primary-500 hover:bg-primary-600">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container px-6 mx-auto">
+            <div class="mb-12 text-center">
+                <h2 class="mb-4 text-5xl font-bold text-primary-500">INSTRUCTORS</h2>
+                <div class="w-20 h-1 mx-auto bg-primary-500"></div>
+                <h3 class="mt-4 text-2xl font-bold">Expert Instructors</h3>
+            </div>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- Instructor 1 -->
+                <div class="overflow-hidden bg-white rounded-lg shadow-lg">
+                    <img src="assets/images/team-1.jpg" alt="Ucok" class="object-cover w-full h-64">
+                    <div class="p-6">
+                        <h4 class="mb-1 text-xl font-semibold">Ucok</h4>
+                        <p class="mb-4 text-sm text-gray-500">JAKARTA</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor 2 -->
+                <div class="overflow-hidden bg-white rounded-lg shadow-lg">
+                    <img src="assets/images/team-2.jpg" alt="Yola" class="object-cover w-full h-64">
+                    <div class="p-6">
+                        <h4 class="mb-1 text-xl font-semibold">Yola</h4>
+                        <p class="mb-4 text-sm text-gray-500">JAKARTA</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor 3 -->
+                <div class="overflow-hidden bg-white rounded-lg shadow-lg">
+                    <img src="assets/images/team-3.jpg" alt="Moddy" class="object-cover w-full h-64">
+                    <div class="p-6">
+                        <h4 class="mb-1 text-xl font-semibold">Moddy</h4>
+                        <p class="mb-4 text-sm text-gray-500">JAKARTA</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor 4 -->
+                <div class="overflow-hidden bg-white rounded-lg shadow-lg">
+                    <img src="assets/images/team-4.jpg" alt="Bella" class="object-cover w-full h-64">
+                    <div class="p-6">
+                        <h4 class="mb-1 text-xl font-semibold">Bella</h4>
+                        <p class="mb-4 text-sm text-gray-500">JAKARTA</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-primary-500 hover:text-primary-600">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--========== Footer ==========-->
+    <footer class="py-12 text-white bg-gray-900">
+        <div class="container px-4 mx-auto">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="mb-4 text-lg font-semibold">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 transition-colors hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 transition-colors hover:text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                     <h4 class="mb-4 text-lg font-semibold">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="mt-1 mr-3 fas fa-map-marker-alt text-primary-500"></i>
+                            <span class="text-gray-400">JL. JAKARTA, IND</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="mr-3 fas fa-phone text-primary-500"></i>
+                            <span class="text-gray-400">+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="mr-3 fas fa-envelope text-primary-500"></i>
+                            <span class="text-gray-400">info@learning.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                  <!-- Gallery -->
+                <div>
+                    <h4 class="mb-4 text-lg font-semibold">Gallery</h4>
+                    <div class="grid grid-cols-3 gap-2">
+                        <a href="#" class="block">
+                            <img src="assets/images/2.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="assets/images/3.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="assets/images/2.1.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="assets/images/1.PNG" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="assets/images/1.9.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                        <a href="#" class="block">
+                            <img src="assets/images/1.8.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="mb-4 text-lg font-semibold">Newsletter</h4>
+                    <p class="mb-4 text-gray-400">Subscribe to our newsletter to receive updates on new courses and special offers.</p>
+                    <form class="space-y-3">
+                        <div class="relative">
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-2 text-white bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500">
+                        </div>
+                        <button type="submit" class="w-full btn-primary">
+                            Subscribe Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="pt-8 mt-12 border-t border-gray-800">
+                <div class="flex flex-col items-center justify-between md:flex-row">
+                    <div class="mb-4 text-gray-400 md:mb-0">
+                        © 2025 Learning. All Rights Reserved. Designed by <a href="#" class="text-primary-500 hover:text-primary-400">Dhony Nurhandoko</a>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 transition-colors hover:text-primary-500">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
