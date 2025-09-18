@@ -22,7 +22,7 @@
 </head>
 <body class="bg-white">
 
-    <!--========== Navigation ==========-->
+<!--========== Navigation ==========-->
    <header class="fixed z-50 w-full bg-white shadow-md">
         <nav class="container flex items-center justify-between px-6 py-4 mx-auto">
             <div class="flex items-center">
@@ -76,9 +76,33 @@
                     Join Now <i class="ml-2 fas fa-arrow-right"></i>
                 </a>
             </div>
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="flex items-center text-gray-600 md:hidden hover:text-primary-500 focus:outline-none" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
-    </header>
 
+        <!-- Mobile menu, hidden by default -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">HOME</a>
+            <a href="visi-misi.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">VISI-MISI</a>
+            <a href="courses.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">COURSES</a>
+            <a href="our-team.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">Our Team</a>
+            <a href="testimoni.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">Testimoni</a>
+            <a href="404.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">404 Error</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">CONTACT</a>
+        </div>
+        <script>
+            function toggleMobileMenu() {
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                }
+            }
+        </script>
+    </header>
     <!-- Hero Section -->
     <section class="relative bg-gray-900 h-[400px]">
         <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('assets/images/404-hero.jpg');"></div>
