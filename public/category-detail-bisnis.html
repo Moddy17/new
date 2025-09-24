@@ -1,36 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEARNING - Online Learning Platform</title>
+    <title>LEARNING - Detail Kategori</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="assets/js/carousel.js" defer></script>
-    <script src="assets/js/testimonial-carousel.js" defer></script>
-    <style>
-        .carousel-slide {
-            display: none;
-        }
-        .carousel-slide.active {
-            display: block;
-        }
-        .testimonial-carousel .flex {
-            transition: transform 0.5s ease-in-out;
-        }
-    </style>
 </head>
 <body>
-<!--========== Navigation ==========-->
-   <header class="fixed z-50 w-full bg-white shadow-md">
+    <!--========== Navigation ==========-->
+    <header class="fixed z-50 w-full bg-white shadow-md">
         <nav class="container flex items-center justify-between px-6 py-4 mx-auto">
             <div class="flex items-center">
-                <!-- <a href="/" class="text-2xl font-bold text-primary-500">
-                    <i class="mr-2 fas fa-book-open"></i>LEARNING
-                </a> -->
                 <a href="/" class="flex items-center">
                     <img src="assets/images/1.3.1.png" alt="LEARNING Logo" class="w-20 mr-2 h-15">
-                    <!-- <span class="text-2xl font-bold text-primary-500">LEARNING</span> -->
                 </a>
             </div>
             <div class="items-center hidden space-x-8 md:flex">
@@ -58,7 +42,6 @@
                             menu.classList.remove('opacity-100', 'visible');
                         }
                     }
-                    // Optional: Close dropdown when clicking outside
                     document.addEventListener('click', function(event) {
                         const dropdown = document.getElementById('pages-dropdown');
                         const menu = document.getElementById('dropdown-menu');
@@ -75,13 +58,10 @@
                     Join Now <i class="ml-2 fas fa-arrow-right"></i>
                 </a>
             </div>
-            <!-- Mobile menu button -->
             <button id="mobile-menu-button" class="flex items-center text-gray-600 md:hidden hover:text-primary-500 focus:outline-none" onclick="toggleMobileMenu()">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
-
-        <!-- Mobile menu, hidden by default -->
         <div id="mobile-menu" class="hidden md:hidden">
             <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">HOME</a>
             <a href="visi-misi.html" class="block px-4 py-2 text-gray-600 hover:bg-primary-50 hover:text-primary-500">VISI-MISI</a>
@@ -104,82 +84,25 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-gray-900 h-[400px]">
+    <section class="relative bg-gray-900 h-[300px]">
         <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('assets/images/2.1.jpg');"></div>
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="container relative flex flex-col justify-center h-full px-6 mx-auto text-white">
-            <h1 class="mb-4 text-4xl font-bold md:text-5xl">Courses</h1>
+            <h1 class="mb-4 text-4xl font-bold md:text-5xl">Detail Kategori</h1>
             <div class="flex items-center space-x-2 text-sm">
-                <a href="/" class="hover:text-primary-500">Home</a>
+                <a href="index.html" class="hover:text-primary-500">Home</a>
                 <span>/</span>
-                <a href="/pages" class="hover:text-primary-500">Pages</a>
-                <span>/</span>
-                <span class="text-primary-500">Courses</span>
+                <span class="text-primary-500">Detail Kategori</span>
             </div>
         </div>
     </section>
 
-    <!-- Course Categories -->
-    <section class="py-20">
-        <div class="container px-6 mx-auto">
-            <div class="mb-12 text-center">
-                <h2 class="mb-2 text-xl font-semibold text-primary-500">CATEGORIES</h2>
-                <h3 class="text-3xl font-bold">Courses Categories</h3>
-            </div>
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <!-- Web Design -->
-                <a href="category-detail.html" class="relative overflow-hidden rounded-lg shadow-lg group">
-                    <img src="assets/images/cat-3.jpg" alt="Web Design" class="object-cover w-full h-64">
-                    <div class="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/70 to-transparent">
-                        <div>
-                            <h3 class="text-xl font-semibold text-white">Web Design</h3>
-                            <p class="text-gray-200">49 Courses</p>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Online Marketing -->
-                <a href="category-detail-bisnis.html" class="relative overflow-hidden rounded-lg shadow-lg group">
-                    <img src="assets/images/cat-4.jpg" alt="bisnis-engineer" class="object-cover w-full h-64">
-                    <div class="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/70 to-transparent">
-                        <div>
-                            <h3 class="text-xl font-semibold text-white">bisnis-engineer</h3>
-                            <p class="text-gray-200">49 Courses</p>
-                        </div>
-                    </div>
-                </a href="category-detail-bisnis.html">
-
-                <!-- Graphic Design -->
-                <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                    <img src="assets/images/2.0.jpg" alt="Graphic Design" class="object-cover w-full h-64">
-                    <div class="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/70 to-transparent">
-                        <div>
-                            <h3 class="text-xl font-semibold text-white">Graphic Design</h3>
-                            <p class="text-gray-200">49 Courses</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Video Editing -->
-                <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                    <img src="assets/images/course-2.jpg" alt="Video Editing" class="object-cover w-full h-64">
-                    <div class="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/70 to-transparent">
-                        <div>
-                            <h3 class="text-xl font-semibold text-white">Video Editing</h3>
-                            <p class="text-gray-200">49 Courses</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Popular Courses -->
+    <!-- Courses Card Section -->
     <section class="py-20 bg-gray-50">
         <div class="container px-6 mx-auto">
             <div class="mb-12 text-center">
                 <h2 class="mb-2 text-xl font-semibold text-primary-500">COURSES</h2>
-                <h3 class="text-3xl font-bold">Popular Courses</h3>
+                <h3 class="text-3xl font-bold">Courses di Kategori Ini</h3>
             </div>
             <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
                 <!-- Course 1 -->
@@ -187,7 +110,7 @@
                     <div class="relative">
                         <img src="assets/images/2.1.jpg" alt="Web Development" class="object-cover w-full h-48">
                         <div class="p-6">
-                            <h4 class="mb-2 text-xl font-semibold">Web Design & Development Course for Beginners</h4>
+                            <h4 class="mb-2 text-xl font-semibold">Bisnis Jasa Konsultasi dan Desain</h4>
                             <div class="flex items-center justify-between mb-4">
                                 <span class="text-2xl font-bold text-primary-500">$200.00</span>
                                 <div class="flex text-yellow-400">
@@ -217,7 +140,7 @@
                     <div class="relative">
                         <img src="assets/images/1.8.jpg" alt="Business Engineer" class="object-cover w-full h-48">
                         <div class="p-6">
-                            <h4 class="mb-2 text-xl font-semibold">Bisnis Engineer</h4>
+                            <h4 class="mb-2 text-xl font-semibold">Bisnis Manufaktur dan Produksi</h4>
                             <div class="flex items-center justify-between mb-4">
                                 <span class="text-2xl font-bold text-primary-500">$200.00</span>
                                 <div class="flex text-yellow-400">
@@ -247,7 +170,7 @@
                     <div class="relative">
                         <img src="assets/images/1.PNG" alt="Artificial Intelligence" class="object-cover w-full h-48">
                         <div class="p-6">
-                            <h4 class="mb-2 text-xl font-semibold">artificial intelligence</h4>
+                            <h4 class="mb-2 text-xl font-semibold">Bisnis Berbasis Teknologi dan Inovasi</h4>
                             <div class="flex items-center justify-between mb-4">
                                 <span class="text-2xl font-bold text-primary-500">$250.00</span>
                                 <div class="flex text-yellow-400">
@@ -274,165 +197,6 @@
             </div>
         </div>
     </section>
-
-  <!-- Testimonials -->
-    <section class="py-20">
-        <div class="container px-6 mx-auto">
-            <div class="mb-12 text-center">
-                <h2 class="mb-2 text-xl font-semibold text-primary-500">TESTIMONIAL</h2>
-                <h3 class="text-3xl font-bold">Our Students Say!</h3>
-            </div>
-
-            <!-- Testimonial Carousel -->
-            <div class="max-w-5xl mx-auto testimonial-carousel">
-                <div class="relative overflow-hidden">
-                    <div class="flex transition-transform duration-500" id="testimonialSlider">
-                        <!-- Slide 1 -->
-                        <div class="grid flex-shrink-0 w-full grid-cols-1 gap-6 px-4 md:grid-cols-4">
-                            <!-- Card 1 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/team-2.jpg" alt="NADIA" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">NADIA</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Dapat banyak ilmu yang bisa saya dapat dari learning ini. semuanya nyata.</p>
-                            </div>
-                            <!-- Card 2 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/team-3.jpg" alt="SANDY" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">SANDY</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Senang bisa bergabung di kelas ini. Selama belajar, saya merasa didukung dan nyaman bertanya.</p>
-                            </div>
-                            <!-- Card 3 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/cat-2.jpg" alt="HASAN" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">HASAN</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Instrukturnya sangat sabar dan ahli di bidangnya. Penjelasanya bikin saya lebih semangat belajar.</p>
-                            </div>
-                            <!-- Card 4 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/team-1.jpg" alt="INDRA" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">INDRA</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Platform ini sangat membantu saya dalam belajar web development.</p>
-                            </div>
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="grid flex-shrink-0 w-full grid-cols-1 gap-6 px-4 md:grid-cols-4">
-                            <!-- Card 5 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/team-3.jpg" alt="WIEK" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">WIEK</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Materi yang diberikan sangat lengkap dan mudah dipahami.</p>
-                            </div>
-                            <!-- Card 6 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/2.2.jpg" alt="MADDY" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">MADDY</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Instruktur sangat ramah dan selalu membantu jika ada kesulitan.</p>
-                            </div>
-                            <!-- Card 7 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/team-4.jpg" alt="RIRIN" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">RIRIN</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Saya sangat puas dengan hasil belajar di platform ini.</p>
-                            </div>
-                            <!-- Card 8 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/1.8.jpg" alt="ELSA" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">ELSA</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Belajar jadi lebih menyenangkan dan interaktif.</p>
-                            </div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="grid flex-shrink-0 w-full grid-cols-1 gap-6 px-4 md:grid-cols-4">
-                            <!-- Card 9 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/1.9.jpg" alt="RUHDAN" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">RUHDAN</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Banyak fitur yang memudahkan proses belajar saya.</p>
-                            </div>
-                            <!-- Card 10 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/3.jpg" alt="SITI" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">SITI</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Kursusnya sangat bermanfaat untuk karir saya.</p>
-                            </div>
-                            <!-- Card 11 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/2.1.jpg" alt="HASAN" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">HASAN</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Instruktur sangat sabar dan ahli di bidangnya.</p>
-                            </div>
-                            <!-- Card 12 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/1.PNG" alt="HUSAN" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">HUSAN</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Penjelasannya mudah dipahami dan sangat membantu.</p>
-                            </div>
-                        </div>
-                        <!-- Slide 4 -->
-                        <div class="grid flex-shrink-0 w-full grid-cols-1 gap-6 px-4 md:grid-cols-4">
-                            <!-- Card 13 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/1.7.jpg" alt="BUDI" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">BUDI</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Saya merekomendasikan platform ini ke teman-teman saya.</p>
-                            </div>
-                            <!-- Card 14 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/cat-1.jpg" alt="RAMA" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">RAMA</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Kursusnya sangat menarik dan mudah diikuti.</p>
-                            </div>
-                            <!-- Card 15 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/cat-2.jpg" alt="DEWI" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">DEWI</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Instruktur sangat profesional dan berpengalaman.</p>
-                            </div>
-                            <!-- Card 16 -->
-                            <div class="p-8 text-center rounded-lg bg-gray-50">
-                                <img src="assets/images/cat-3.jpg" alt="YOGA" class="object-cover w-24 h-24 mx-auto mb-6 rounded-full">
-                                <h4 class="mb-2 text-xl font-semibold">YOGA</h4>
-                                <p class="mb-2 text-gray-600">MAHASISWA</p>
-                                <p class="text-gray-700">Saya mendapatkan banyak ilmu baru di sini.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navigation Dots -->
-                <div class="flex justify-center mt-8 space-x-2">
-                    <button class="w-3 h-3 rounded-full bg-primary-500" data-slide="0" onclick="goToSlide(0)"></button>
-                    <button class="w-3 h-3 bg-gray-300 rounded-full hover:bg-primary-500" data-slide="1" onclick="goToSlide(1)"></button>
-                    <button class="w-3 h-3 bg-gray-300 rounded-full hover:bg-primary-500" data-slide="2" onclick="goToSlide(2)"></button>
-                    <button class="w-3 h-3 bg-gray-300 rounded-full hover:bg-primary-500" data-slide="3" onclick="goToSlide(3)"></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Next & Prev Buttons Section -->
-    <div class="flex justify-center my-8 space-x-4">
-        <button class="px-6 py-2 text-white rounded-full bg-primary-500 hover:bg-primary-600" onclick="moveSlide(-1)">
-            <i class="mr-2 fas fa-chevron-left"></i> Prev
-        </button>
-        <button class="px-6 py-2 text-white rounded-full bg-primary-500 hover:bg-primary-600" onclick="moveSlide(1)">
-            Next <i class="ml-2 fas fa-chevron-right"></i>
-        </button>
-    </div>
 
     <!--========== Footer ==========-->
     <footer class="py-12 text-white bg-gray-900">
@@ -472,7 +236,7 @@
                 <div>
                     <h4 class="mb-4 text-lg font-semibold">Gallery</h4>
                     <div class="grid grid-cols-3 gap-2">
-                        <a href="c" class="block">
+                        <a href="#" class="block">
                             <img src="assets/images/2.jpg" alt="Gallery" class="object-cover w-full h-20 rounded">
                         </a>
                         <a href="#" class="block">
@@ -492,7 +256,6 @@
                         </a>
                     </div>
                 </div>
-
 
                 <!-- Newsletter -->
                 <div>
